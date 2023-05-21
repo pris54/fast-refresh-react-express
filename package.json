@@ -6,7 +6,7 @@
   "scripts": {
     "start": "NODE_ENV=production node build/server",
     "prebuild": "rm -rf .tmp/dev-react-cache && rm -rf build && rm -rf .swc/plugins",
-    "build:react:client": "NODE_ENV=production webpack",
+    "build:react:client": "NODE_ENV=production npx webpack",
     "build:react:server": "NODE_ENV=production swc ./react -d build/react --config-file swc.config.json",
     "build:server": "NODE_ENV=production swc ./server -d build/server --config-file swc.config.json",
     "build:webpackConfig": "NODE_ENV=production swc ./webpack.config.ts -d build --config-file swc.config.json",
